@@ -7,6 +7,7 @@
                                                              |___/ 
 ```
 
+[![codecov](https://codecov.io/gh/tanhv90/uuidkey/graph/badge.svg?token=MMCEEW697S)](https://codecov.io/gh/tanhv90/uuidkey)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tanhv90/uuidkey/master/LICENSE)
 
 A Node.js implementation of the [agentstation/uuidkey](https://github.com/agentstation/uuidkey) library, originally written in Go.

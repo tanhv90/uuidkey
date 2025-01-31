@@ -116,4 +116,23 @@ describe('ApiKey Module', () => {
     expect(uuid == UUID_KEY_PAIRS.uuid);
     expect(uuid2 == UUID_KEY_PAIRS.uuid);
   });
+
+  test('encode using invalid uuid', () => {
+    try {
+      newAPIKey('MYPREFIX', 'd1756360-5da0-40df-9926-a76abff5601');
+    } catch (error) {
+      expect(error).toBeInstanceOf(Error);
+      expect((error as Error).message).toBe('Invalid UUID length')
+    }
+  });
+
+  test('invalid checksum format', () => {
+    try {
+      const key = "MYPREFIX_38QARV01ET0G6Z2CJD9VA2ZZAR0XVNBP1HX5VMAJDWWHK7TZJJ_E480952332"
+      const apiKey = parse(key);
+    } catch (error) {
+      expect(error).toBeInstanceOf(Error);
+      expect((error as Error).message).toBe('invalid checksum format: must be 8 hexadecimal characters')
+    }
+  });
 });
