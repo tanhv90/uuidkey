@@ -6,7 +6,7 @@
                          \___/  \___/ |___|____/   |_|\_\___|\__, |
                                                              |___/ 
 ```
-
+[![npm version](https://img.shields.io/npm/v/uuidkey)](https://www.npmjs.com/package/uuidkey)
 [![codecov](https://codecov.io/gh/tanhv90/uuidkey/graph/badge.svg?token=MMCEEW697S)](https://codecov.io/gh/tanhv90/uuidkey)
 [![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://raw.githubusercontent.com/tanhv90/uuidkey/master/LICENSE)
 
